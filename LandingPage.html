@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="26" height="26">
+                        <path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 
+                        16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 
+                        12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path></svg></a>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><b>CHOCOLATE</b></a></li>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="menu-button" onclick="showSidebar()">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="26" height="26">
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="home">
+            <h1>Delicious Chocolates</h1>
+            <p>Satisfy your sweet cravings with our premium collection</p>
+        </div>
+
+        <div class="container">
+            <h2>Our Monthly Plans</h2>
+            <div class="custom-select">
+                <select id="currency" onchange="convertCurrencies()">
+                    <option value="USD">United States Dollar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="GBP">British Pound (GBP)</option>
+                    <option value="INR">Indian Rupee (INR)</option>
+                    <option value="JPY">Japanese Yen (JPY)</option>
+                    <!-- Add more currencies as needed -->
+                </select><br><br>
+            </div>
+            <div class="price-row">
+                <div class="price-col">
+                    <p>Free</p>
+                    <h3 class="price" data-usd="0"></h3>
+                    <ul>
+                        <li>Access to variety of chocolate recepies</li>
+                        <li>Limited customer support</li>
+                        <li>Shipping charges</li>
+                    </ul>
+                    <button>Continue with free</button>
+                </div>
+                <div class="price-col">
+                    <p>Basic</p>
+                    <h3 class="price" data-usd="5"></h3>
+                    <ul>
+                        <li>All the features of free plan</li>
+                        <li>Access to premium chocolate recepies</li>
+                        <li>Priority customer support</li>
+                        <li>Exclusive discount on chocolate products</li>
+                    </ul>
+                    <button>Try this</button>
+                </div>
+                <div class="price-col">
+                    <p>Premium</p>
+                    <h3 class="price" data-usd="11"></h3>
+                    <ul>
+                        <li>All the features of basic plan</li>
+                        <li>Unlimited access to all chocolate recepies</li>
+                        <li>24/7 dedicated customer support</li>
+                        <li>Early access to new chocolate products</li>
+                        <li>No shipping charges</li>
+                    </ul>
+                    <button>Try this</button>
+                </div>
+            </div>
+            <h2>Explore Our Vegan Chocolate Collection</h2>
+            <p style="text-align: center; font-size: 24px; padding-left: 60px; padding-right: 60px;">
+                Discover the rich and delectable world of our vegan chocolate collection. Crafted with the 
+                finest plant-based ingredients, our chocolates offer an indulgent experience without 
+                compromising on flavor or ethics. Each piece is made with sustainably sourced cacao, ensuring 
+                a pure, intense chocolate taste that delights the senses. Whether you prefer dark, creamy, or 
+                filled varieties, our selection caters to every palate. Perfect for those who are vegan or 
+                simply looking to enjoy a guilt-free treat, our vegan chocolates are a testament to the fact
+                that indulgence can be both luxurious and compassionate. Treat yourself or a loved one 
+                to the exquisite pleasure of our vegan chocolate collection.
+            </p>
+            <button class="container-button">Explore</button>
+        </div>
+        <footer>2024 Company, All Rights Reserved.</footer>
+
+
+        <script src="LandingPage.js"></script>
+    </body>
+</html>
